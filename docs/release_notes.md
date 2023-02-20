@@ -1,7 +1,33 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.0.3
+latest_version: 3.1.0
+---
+
+### Version 3.1.0
+**Release Date**: 29.03.2021
+
+**What's New?**
+
+| Description   
+| --------------
+| Updated default rule lookup with Enterprise Security 6.4.1 and ES Content Update 3.17.0
+| API v2 endpoint integration with HMAC-SHA512 authentication
+| Documentation updates and corrections
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 3.0.3
