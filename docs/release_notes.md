@@ -1,7 +1,33 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.0.0
+latest_version: 3.0.1
+---
+
+### Version 3.0.1
+**Release Date**: 08.01.2021
+
+**What's New?**
+
+| Description   
+| --------------
+| Bug fixes
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| N/A    | N/A	          | mitre_user_rule_technique_lookup.csv overwrites existing lookup during upgrades
+| N/A    | N/A	          | Missing mitre_api_rule_technique_lookup causes issues on fresh/new installations    
+| N/A    | N/A	          | Missing sub-techniques in ATTACK version 8.1
+
 ---
 
 ### Version 3.0.0

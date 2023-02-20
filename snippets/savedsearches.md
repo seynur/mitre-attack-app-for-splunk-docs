@@ -1,4 +1,4 @@
-This application comes with predefined saved searches.  Lookup Gen searches are scheduled to run  daily after midnight.
+This application comes with predefined saved searches.  Lookup Gen searches are scheduled to run  daily after midnight. The main ones that are used by views:
 
 * **MITRE ATT&CK All Rules and Techniques Lookup Gen**: This lookup generator checks currently enabled correlation rules via analytic stories and combines the searches with user-defined ``mitre_user_rule_technique_lookup.csv`` file that matches MITRE ATT&CK technique IDs with rules.
 
