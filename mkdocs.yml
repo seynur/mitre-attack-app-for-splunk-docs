@@ -1,0 +1,58 @@
+site_name: MITRE ATT&CK App for Splunk&reg;
+# Repository
+repo_name: seynur/DA-ESS-MitreContent
+repo_url: https://github.com/seynur/DA-ESS-MitreContent
+
+plugins:
+  - macros
+
+theme:
+  name: material
+  custom_dir: overrides
+  # features:
+  #   - header.autohide
+  logo: assets/img/seynur_logo.png
+  favicon: assets/img/seynur_logo.ico
+
+extra_css:
+  - assets/css/extra.css
+  - assets/css/mitre.css
+  - assets/css/mitre-utils.css
+  # - assets/css/bootstrap.min.css
+
+markdown_extensions:
+  - tables
+  - pymdownx.snippets:
+      # Fails the build if any imports are missing
+      #check_paths: true
+      base_path: "snippets"
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - index.md
+  - 'About':
+    - release_notes.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://tr.linkedin.com/company/seynur?original_referer=https%3A%2F%2Fwww.google.com%2F
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/seynur
+  generator: false
+  current_version: 1.0.0
+  version:
+    provider: mike
+
+
+copyright: Copyright &copy; 2023 - Seynur All rights reserved.
+
+watch:
+  - "snippets"
