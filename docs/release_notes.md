@@ -1,7 +1,32 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 2.0.0
+latest_version: 2.0.1
+---
+
+### Version 2.0.1
+**Release Date**: 12.02.2020
+
+**What's New?**
+
+| Description |
+| ------------------------       
+| Bug fix for appinspect validation
+| Tactics overview displayed as table with updated js and css
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 2.0.0
