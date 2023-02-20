@@ -13,7 +13,6 @@ For one of the views:
 - [Sankey Diagram - Custom Visualization](https://splunkbase.splunk.com/app/3112/)
 
 For use cases:
-
 - [Splunk ES Content Update](https://splunkbase.splunk.com/app/3449/) 1.0.40 or above
 
 For data model searches:
