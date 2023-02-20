@@ -1,7 +1,36 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.3.0
+latest_version: 3.4.0
+---
+
+### Version 3.4.0
+**Release Date**: 29.07.2021
+
+**What's New?**
+
+| Description   
+| --------------
+| API integration is replaced with out-of-the-box rules
+| Removed custom search command ```getattackdetectionrules```
+| Changed setup view
+| Added 65 new rules (optimized to use Data Models) from MITRE Cyber Analytics Repository (car.mitre.org)
+| Added ```mitre_app_rule_technique_lookup```
+| Removed ```mitre_api_rule_technique_lookup``
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 3.3.0

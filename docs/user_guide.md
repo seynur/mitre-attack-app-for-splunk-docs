@@ -112,7 +112,7 @@ Once you’re done with the **Analytic Story**, you may want to run Lookup File 
 &nbsp;
 
 #### Match with Custom Correlation Search
-Splunk Enterprise Security 6.4.x provides MITRE ATT&amp;CK annotation in correlation searches that map to techniques/sub-techniques. These mappings are integrated into both the Compliance and Triggered Techniques dashboards. .
+Splunk Enterprise Security 6.4.x provides MITRE ATT&amp;CK annotation in correlation searches that map to techniques/sub-techniques. These mappings are integrated into both the Compliance and Triggered Techniques dashboards.
 
 &nbsp;
 
@@ -171,7 +171,7 @@ __(1)__ Utilize **Map Rule to Technique** views
 
 &nbsp;
 
-  * Next, select the rule name form __Rule Name__ dropdown menu item and associate with technique IDs from __MITRE ATT&CK Technique__ multi-select then hit __Submit__.  Both panels will be updated accordingly.
+  *  Next, select the rule name form __Rule Name__ dropdown menu item and associate with technique IDs from __MITRE ATT&CK Technique__ multi-select then hit __Submit__.  Both panels will be updated accordingly. Once you're done with mappings and updates, you may want to run __Lookup File Generation__ manually in order to generate the overall lookup files or wait until the scheduled searches run.
 
   ![map_rule_to_technique2]
 
