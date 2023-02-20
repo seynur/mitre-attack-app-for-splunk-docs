@@ -1,18 +1,18 @@
-Upon installation of the add-on, you may need to initially run a search to populate the lookup table.  The report simply checks for available (and enabled) Correlation Searches that are tagged for MITRE ATT&CK techniques within the Analytic Stories.
+Upon initial installation you will be on Compliance Dashboard.  If the matrix is not populated, click on the table row to run manually, which will direct you to the Setup dashboard (searches run automatically on that dashboard).
 
-1. First, please check the table at the top named "**MITRE ATT&CK Compliance Lookup Gen Status**" for lookup table status.
+1. Click on the table row.
 
-  ![mitreapp_setup1]
+   ![setup1](assets/img/setup1.png)
+2. This setup page will run lookup generating searches for the initial usage. These reports are scheduled to run daily at midnight in order to populate/update the lookup tables for enabled correlation rules pertinent to MITRE ATT&CK Framework.
 
-2. Click on the row if the lookup table appears to be empty.  This will open a new windows with the "**Mitre Compliance Lookup Gen**" report.  By default this scheduled report runs daily, at 0:00. Its time range is last 24 hours.  Click **Open in Search** button to run this report for the first time.
+   ![setup2](assets/img/setup2.png)
+3. Wait for the initial search to complete for MITRE ATT&CK All Rules and Techniques Lookup.  Depending on your environment you may get an error for MITRE ATT&CK Compliance Lookup.  No worries, wait for 15 seconds for it to refresh; this search depends on the first one.
 
-  ![mitreapp_setup1]
+   ![setup3](assets/img/setup3.png)
+4. Once the search is completed, you can go back to "MITRE ATT&CK Compliance with Splunk ES" dashboard to view the level of existing rules (enabled and available) in comparison to MITRE ATT&CK techniques. You can click on a specific technique in order to view the associated correlation rules within ES App.
 
-3. Once the search is completed, you can go back to "MITRE ATT&CK Compliance with Splunk ES" dashboard to view the level of existing rules (enabled and available) in comparison to MITRE ATT&CK techniques.
+   ![setup4](assets/img/setup4.png)
+5. MITRE ATT&CK Rule Finder view enables users to search for existing correlation rules based on technique names.  You can click on the desired rule for further configuration.
 
-  ![mitreapp_setup3]
-
-
-[mitreapp_setup1]: assets/img/mitreapp_setup1.png
-[mitreapp_setup2]: assets/img/mitreapp_setup2.png
-[mitreapp_setup3]: assets/img/mitreapp_setup3.png
+   ![setup5](assets/img/setup5.png)
+   ![setup6](assets/img/setup6.png)

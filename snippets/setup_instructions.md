@@ -1,1 +1,1 @@
-Upon initial installation you may need to manually run "MITRE Compliance Lookup Gen" saved search/report in order to populate the lookup table.
+Upon initial installation you will be on Compliance Dashboard. If the matrix is not populated, click on the table to run manually, which will direct you to the Setup dashboard (searches run automatically on that dashboard).

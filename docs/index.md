@@ -13,6 +13,12 @@ title: Overview
 ---
 
 
+### Recommended Splunk Apps:
+--8<-- "recommended_splunk_apps.md"
+
+---
+
+
 ### Setup Instructions
 --8<-- "setup_instructions.md"
 

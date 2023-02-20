@@ -1,7 +1,36 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 1.3.0
+latest_version: 2.0.0
+---
+
+### Version 2.0.0
+**Release Date**: 08.02.2020
+
+**What's New?**
+
+| Description |
+| ------------------------       
+| Updated lookup tables to correctly define MITRE ATT&CK tactics and techniques
+| Introduced a new macro to utilize technique and tactic IDs/names
+| Updated dashboards to utilize new lookup table and macro
+| Performance improvements
+| Updated CSS and JS files
+| Introduced a setup view for ease of initial lookup generation
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 1.3.0
@@ -11,7 +40,7 @@ latest_version: 1.3.0
 
 | Description |
 | ------------------------
-|  Updated ATT&CK Matrix dashboard
+| Updated ATT&CK Matrix dashboard
 | Added new dashboard for detailed view of triggered rules by notable assets and tactics/techniques
 | Improved search performance and dependency on lookups
 | Added a new lookup to match correlation rules to MITRE ATT&CK tactics/techniques
