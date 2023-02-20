@@ -1,7 +1,31 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.0.2
+latest_version: 3.0.3
+---
+
+### Version 3.0.3
+**Release Date**: 25.03.2021
+
+**What's New?**
+
+| Description   
+| --------------
+| Bug fixes
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| N/A    | N/A	          | ES Content Update mitre_attack annotation provides Technique IDs instead of names with newer versions. This fix is compatible with both name and/or ID representation of annotations to build compliance dashboard.
+
 ---
 
 ### Version 3.0.2
