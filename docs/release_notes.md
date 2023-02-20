@@ -1,7 +1,32 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 2.0.1
+latest_version: 2.1.0
+---
+
+### Version 2.1.0
+**Release Date**: 25.02.2020
+
+**What's New?**
+
+| Description |
+| ------------------------       
+| Added a new view for mapping rules to Techniques
+| Updated lookup tables and some searches accordingly
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 2.0.1
