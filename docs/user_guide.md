@@ -6,13 +6,14 @@ title: User Guide
 This guide will provide description for the views that comes with this application and steps on how to create additional correlation searches.
 
 
-    &nbsp;
+
+&nbsp;
 
 
-    ---
+---
 
 
-    &nbsp;
+&nbsp;
 
 ### MITRE ATT&CK Compliance with Splunk ES View
 Each cell containing a technique is colored based on the percentage of enabled correlation searches.
@@ -31,6 +32,7 @@ Currently the ranges are set as follows:
 You can mouse over to the cells that contain techniques in order to view the number of available and enabled correlation rules that are specific to that technique.
 ![setup4]
 
+
 &nbsp;
 
 
@@ -40,11 +42,12 @@ You can mouse over to the cells that contain techniques in order to view the num
 &nbsp;
 
 ### MITRE ATT&CK Matrix View
-This dashboard/form has filtering options based on "**Event Time Range**" and "**Urgency**" level of Notable Events.  It provides and overview of triggered techniques within MITRE ATT&CK Matrix colored according to the "**Urgency**" level of Notable Events.
+This dashboard/form has filtering options based on "**Event Time Range**" and "**Urgency**" level and it provides and overview of triggered techniques within MITRE ATT&CK Matrix colored according to the "**Urgency**" level of Notable Events or Alert Manager populated index.
 
-You can click on the triggered technique which provides the drill-down functionality and opens up Enterprise Security App **Incident Review** view for further analysis/investigation.
+You can click on the triggered technique which provides the drill-down functionality.  Depending on your setup you will either drill-down via Enterprise Security App **Incident Review** view or Alert Manager **Incident Posture** for further analysis/investigation.
 
 ![triggered_techniques1]
+
 
 &nbsp;
 
@@ -65,6 +68,7 @@ Currently following panels are available:
 
 ![triggered_techniques2]
 
+
 &nbsp;
 
 
@@ -74,6 +78,11 @@ Currently following panels are available:
 &nbsp;
 
 ### How To Match a Correlation Search with Framework
+In order to view a saved/correlation search integrated with the MITRE ATT&amp;CK Matrix, following tasks need to be completed.
+
+1. alert action (ES or Alert Manager) - triggered view TODO:
+2. associate rule with technique TODO:
+
 There are 2 ways to accomplish this task.
 
 1. [Match with Analytic Story](#match-with-analytic-story): Enable a new or existing *Analytic Story* to be tagged with the relevant *Correlation Search*
@@ -109,12 +118,28 @@ Each correlation rule is associated with 1 or more technique IDs.  For a given c
 
 2. Edit ``mitre_user_rule_technique_lookup.csv`` directly.  
 
-----
-  __(1)__ Utilize **Map Rule to Technique** views
+__NOTE:__ The scheduled searches combine this lookup along with analytic stories and checks against existing saved/correlation searches in order to create ``mitre_all_rule_technique_lookup.csv``, which is used within the app.
 
-  1. Go to   "**Configuration --> Map Rule to Technique**" from MITRE ATT&CK Framework App menu.  Initially it should appear something similar to following image.
+
+----
+__(1)__ Utilize **Map Rule to Technique** views
+
+  * Go to "**Configuration --> Map Rule to Technique**" from MITRE ATT&CK Framework App menu.  Initially it should appear something similar to following image.
 
   ![map_rule_to_technique1]
+
+*__Panel Descriptions__*:
+
+  __Existing User Defined Mappings__: This panel displays the contents of user defined mappings and refreshed every 30 seconds to display updates.
+
+  __Newly Added User Defined Mapping__: This panel displays the newly selected rule-to-technique mapping which is added to the lookup table.
+
+  * Next, select the rule name form __Rule Name__ dropdown menu item and associate with technique IDs from __MITRE ATT&CK Technique__ multi-select then hit __Submit__.  Both panels will be updated accordingly.
+
+  ![map_rule_to_technique2]
+
+__Important NOTE__: If a rule name is already defined, this view does NOT add any mappings to the lookup in order to avoid duplicates.  You will see ``No results found`` message and will need to edit the lookup table manually.
+
 
 
 __(2)__ Edit ``mitre_user_rule_technique_lookup.csv`` directly.  
@@ -128,7 +153,14 @@ The lookup file expects 2 fields:
 * ``rule_name`` : The rule name as it appears in ``savedsearches.conf`` (e.g. "Access - Excessive Failed Logins - Rule")
 * ``technique_id`` : MITRE ATT&CK Technique ID (e.g. T1078 for Valid Accounts) list separated by spaces
 
+### How to integrate with Alert Manager
+__NOTE__:This section is applicable for users who do not have Enterprise Security Application installed and would like to integrate with Alert Manager app.
 
+The Alert Manager application provides simple incident workflows in order to investigate fired alerts or notable events. For any correlation/saved search that is applicable as a MITRE ATT&amp;CK technique you need to select/add Alert Manager as a Splunk alert action.
+
+![alert_manager_action]
+
+__IMPORTANT NOTE__: In order to have drill-down working with Alert Manager seamlessly the ```Title``` must match the search name, therefore leaving it as (shown in the example screenshot) ```$name$``` instead of typing the search title/name is recommended.
 
 ----
 
@@ -143,3 +175,5 @@ The lookup file expects 2 fields:
 [lookup_editor1]: assets/img/lookup_editor1.png
 [map_rule_to_technique1]: assets/img/map_rule_to_technique1.png
 [map_rule_to_technique2]: assets/img/map_rule_to_technique2.png
+[map_rule_to_technique3]: assets/img/map_rule_to_technique3.png
+[alert_manager_action]: assets/img/alert_manager_action.png

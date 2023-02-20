@@ -1,7 +1,58 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 2.2.0
+latest_version: 2.4.0
+---
+
+### Version 2.4.0
+**Release Date**: 30.10.2020
+
+**What's New?**
+
+| Description   
+| --------------
+| New setup view to be compatible with Splunk Cloud
+| ``- Setup.xml replaced by custom javascript.``
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A	          | Alert Manager 3.0.4 compatibility issues
+
+---
+
+### Version 2.3.0
+**Release Date**: 22.06.2020
+
+**What's New?**
+
+| Description   
+| --------------
+| Option to work with plain Splunk Enterprise (no ES requirement)
+| ``- Added macros for flexible deployment option (default is ES app)``
+| ``- Updated views to use the macros``
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 2.2.0
