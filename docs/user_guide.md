@@ -5,7 +5,6 @@ title: User Guide
 
 This guide will provide description for the views that comes with this application and steps on how to create additional correlation searches.
 
-
 &nbsp;
 
 
@@ -16,11 +15,11 @@ This guide will provide description for the views that comes with this applicati
 
 
 ### MITRE ATT&CK Compliance with Splunk ES View
-Each cell containing a technique is colored based on the percentage of enabled correlation searches.
+Each cell containing a technique/sub-technique is colored based on the percentage of enabled correlation searches.
 
 If there isn't any related correlation searches, the cell is left uncolored.
 
-If there are available correlation searches either within Enterprise Security (and ESCU) or as regular saved searches with matching MITRE ATT&CK techniques, then cells are colored based on percentage of enabled/active ones.
+If there are available correlation searches either within Enterprise Security (and ESCU) or as regular/custom saved searches with matching MITRE ATT&CK techniques/sub-techniques, then cells are colored based on percentage of enabled/active ones.
 
 Currently the ranges are set as follows:
 
@@ -29,7 +28,7 @@ Currently the ranges are set as follows:
 * medium: 50–70% enabled 
 * high: 70%+ enabled
 
-You can mouse over to the cells that contain techniques in order to view the number of available and enabled correlation rules that are specific to that technique.
+You can mouse over to the cells that contain techniques/sub-techniques in order to view the number of available and enabled correlation rules that are specific to that technique/sub-technique.
 ![setup4]
 
 &nbsp;
@@ -80,10 +79,11 @@ In order to view a saved/correlation search integrated with the MITRE ATT&amp;CK
 1. alert action (ES or Alert Manager) - triggered view TODO:
 2. associate rule with technique TODO:
 
-There are 2 ways to accomplish this task.
+There are 3 ways to accomplish this task.
 
 1. [Match with Analytic Story](#match-with-analytic-story): Enable a new or existing *Analytic Story* to be tagged with the relevant *Correlation Search*
-2. [Match with Lookup](#match-with-lookup): Edit the ``mitre_user_rule_technique_lookup.csv`` file.
+2. [Match with Custom Correlation Search](#match-with-custom-correlation-search): Enable a new or existing *Custom Correlation Search* with Content Management
+3. [Match with Lookup](#match-with-lookup): Edit the ``mitre_user_rule_technique_lookup.csv`` file.
 
 #### Match with Analytic Story
 The view in the application utilized *Analytic Stories* that are tagged with the *Correlation Searches*.  Hence, in order to associate a *Correlation Search* with MITRE ATT&CK Techniques, you will need to create a new *Analytic Story* and add your *Correlation Search* with the appropriate tags.
@@ -110,6 +110,39 @@ Once saved, the correlation search will populate both the Compliance and Trigger
 &nbsp;
 
 &nbsp;
+
+#### Match with Custom Correlation Search
+Splunk Enterprise Security 6.4.x provides MITRE ATT&amp;CK annotation in correlation searches that map to techniques/sub-techniques. These mappings are integrated into both the Compliance and Triggered Techniques dashboards. .
+
+&nbsp;
+
+**Note:** Please go to Splunk Documentation on [How to create a Correlation Search](https://docs.splunk.com/Documentation/ES/latest/Admin/Createcorrelationsearches)
+
+&nbsp;
+
+For example, if we want the a *Correlation Search* to be associated with one or more techniques, we need to perform the following steps:
+
+&nbsp;
+
+1. Go to "**Configure --> Content --> Content Management**" from Enterprise Security Application menu.  Click on "**Create New Content**" and select "**Correlation Search**"
+
+   ![contentmanagement1]
+   ![contentmanagement2]
+2. Enter a **Name** and fill other details as necessary for this correlation search.  Add your custom search.
+
+   ![contentmanagement3]
+3. Enter MITRE ATT&CK techniques/sub-techniques in the **Annotations** section.
+
+   ![contentmanagement4]
+
+&nbsp;
+
+Once you’re done with the **Correlation Search**, you may want to run Lookup File Generation manually in order to generate the overall lookup files or wait until the scheduled searches run. After lookup file generation, the correlation search will populate both the Compliance and Triggered Techniques dashboards.
+
+&nbsp;
+
+&nbsp;
+
 
 #### Match with Lookup
 Each correlation rule is associated with 1 or more technique IDs.  For a given correlation rule you if you simply want to add the technique ID(s), then you have 2 choices:
@@ -193,3 +226,8 @@ __IMPORTANT NOTE__: In order to have drill-down working with Alert Manager seaml
 [map_rule_to_technique2]: assets/img/map_rule_to_technique2.png
 [map_rule_to_technique3]: assets/img/map_rule_to_technique3.png
 [alert_manager_action]: assets/img/alert_manager_action.png
+[contentmanagement1]: assets/img/contentmanagement1.png
+[contentmanagement2]: assets/img/contentmanagement2.png
+[contentmanagement3]: assets/img/contentmanagement3.png
+[contentmanagement4]: assets/img/contentmanagement4.png
+[contentmanagement5]: assets/img/contentmanagement5.png

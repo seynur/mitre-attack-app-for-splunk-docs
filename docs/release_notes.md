@@ -1,7 +1,31 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.1.0
+latest_version: 3.1.1
+---
+
+### Version 3.1.1
+**Release Date**: 14.04.2021
+
+**What's New?**
+
+| Description   
+| --------------
+|Splunk Enterprise Security 6.4.x provides mitre_attack annotation in correlation searches that map to techniques. These mappings are integrated into both the Compliance and Triggered Techniques dashboards
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| N/A    | N/A	          | MITRE ATT&CK Matrix search macro issue is fixed for deployments with Enterprise Security
+
 ---
 
 ### Version 3.1.0
