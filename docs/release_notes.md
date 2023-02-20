@@ -1,7 +1,32 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.1.1
+latest_version: 3.2.0
+---
+
+### Version 3.2.0
+**Release Date**: 04.05.2021
+
+**What's New?**
+
+| Description   
+| --------------
+| Compatibility with ATT&CK version 9.0
+| ``- Updated lookup tables with technique and sub-technique IDs``
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 3.1.1
