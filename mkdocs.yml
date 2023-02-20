@@ -23,8 +23,6 @@ extra_css:
 markdown_extensions:
   - tables
   - pymdownx.snippets:
-      # Fails the build if any imports are missing
-      #check_paths: true
       base_path: "snippets"
   - attr_list
   - md_in_html
@@ -50,7 +48,7 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/seynur
   generator: false
-  current_version: 3.8.0
+  current_version: 3.8.1
   version:
     provider: mike
 
