@@ -47,7 +47,7 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/seynur
   generator: false
-  current_version: 1.2.0
+  current_version: 1.2.1
   version:
     provider: mike
 

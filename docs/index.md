@@ -4,6 +4,8 @@ title: Overview
 
 --8<-- "overview_mitre.md"
 
+---
+
 ### Required Splunk Apps:
 --8<-- "required_splunk_apps.md"
 

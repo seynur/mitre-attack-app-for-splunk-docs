@@ -1,8 +1,33 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 1.2.0
+latest_version: 1.2.1
 ---
+### Version 1.2.1
+**Release Date**: 24.10.2019
+
+**What's New?**
+
+| Description |
+| ------------------------
+| Bug fixes with javascript table population
+| Ordering of table fields to align with MITRE ATT&CK content
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A	          | -
+
+---
+
 ### Version 1.2.0
 **Release Date**: 24.08.2019
 
