@@ -1,7 +1,31 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.7.0
+latest_version: 3.8.0
+---
+
+### Version 3.8.0
+**Release Date**: 09.01.2023
+
+**What's New?**
+
+| Description   
+| --------------
+| Updated search macros and views to include MITRE ATT&CK annotations dynamically.
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 3.7.0
