@@ -216,12 +216,153 @@
       
       
         <label class="md-nav__link" for="__nav_2">
+          Get Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Get Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Get Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          User Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        User Guide
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mitre-attck-compliance-with-splunk-es-view" class="md-nav__link">
+    MITRE ATT&amp;CK Compliance with Splunk ES View
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitre-attck-matrix-view" class="md-nav__link">
+    MITRE ATT&amp;CK Matrix View
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitre-attck-triggered-tactics-techniques-view" class="md-nav__link">
+    MITRE ATT&amp;CK Triggered Tactics &amp; Techniques View
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-match-a-correlation-search-with-framework" class="md-nav__link">
+    How To Match a Correlation Search with Framework
+  </a>
+  
+    <nav class="md-nav" aria-label="How To Match a Correlation Search with Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#match-with-analytic-story" class="md-nav__link">
+    Match with Analytic Story
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#match-with-lookup" class="md-nav__link">
+    Match with Lookup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
           About
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="About" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           About
         </label>
@@ -356,8 +497,9 @@
 <p>If there are available correlation searches within Enterprise Security (and ESCU), then cells are colored based on percentage of enabled/active ones.</p>
 <p>Currently the ranges are set as follows:</p>
 <ul>
-<li>low: 0-30% enabled</li>
-<li>medium: 30-50% enabled</li>
+<li>none: 0–30% (uncolored)</li>
+<li>low: 30–50% enabled </li>
+<li>medium: 50–70% enabled </li>
 <li>high: 70%+ enabled</li>
 </ul>
 <p>You can mouse over to the cells that contain techniques in order to view the number of available and enabled correlation rules that are specific to that technique.
@@ -381,6 +523,9 @@
 <li><strong>Triggered Techniques by Tactic</strong>: There's a separate panel for each MITRE ATT&amp;CK Framework Tactic that shows details on triggered Technique, associated correlation rule name, and count of occurrences.</li>
 </ol>
 <p><img alt="triggered_techniques2" src="../assets/img/triggered_techniques2.png" /></p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
 <h3 id="how-to-match-a-correlation-search-with-framework">How To Match a Correlation Search with Framework</h3>
 <p>There are 2 ways to accomplish this task.</p>
 <ol>
@@ -443,6 +588,42 @@ You can edit the csv directly or utilize Lookup Editor app from web interface.</
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Installation
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../release_notes/" class="md-footer__link md-footer__link--next" aria-label="Next: Release Notes" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Release Notes
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
