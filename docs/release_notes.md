@@ -1,8 +1,38 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 2.1.0
+latest_version: 2.2.0
 ---
+
+### Version 2.2.0
+**Release Date**: 09.05.2020
+
+**What's New?**
+
+| Description   
+| --------------
+| Added option to display compliance matrix without default rules (user-defined/API rules only)
+| ``- Added lookup file definitions``
+| ``- Added default rules lookup files for ES 6.1.1 and ESCU 1.0.53 out-of-the-box rules``
+| ``- Updated Lookup Generation view``
+| Setup.xml for API integration for continuous new rule updates (free service but requires registration)
+| ``- Added custom search command (| getattackdetectionrules)``
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A	          | Duplication issue for Rule Finder
+
+---
+
 
 ### Version 2.1.0
 **Release Date**: 25.02.2020

@@ -23,8 +23,9 @@ If there are available correlation searches within Enterprise Security (and ESCU
 
 Currently the ranges are set as follows:
 
-* low: 0-30% enabled
-* medium: 30-50% enabled
+* none: 0–30% (uncolored)
+* low: 30–50% enabled 
+* medium: 50–70% enabled 
 * high: 70%+ enabled
 
 You can mouse over to the cells that contain techniques in order to view the number of available and enabled correlation rules that are specific to that technique.
@@ -64,6 +65,14 @@ Currently following panels are available:
 
 ![triggered_techniques2]
 
+&nbsp;
+
+
+---
+
+
+&nbsp;
+
 ### How To Match a Correlation Search with Framework
 There are 2 ways to accomplish this task.
 
@@ -90,7 +99,6 @@ For example, if we want the *Correlation Search* "**Brute Force Access Behavior 
 4. Click **Save** to save the *Analytic Story* with annotation and mapping with the defined correlation search.  You can add many correlation searches under one analytic story with defined mappings.
 
 Once saved, the correlation search will populate both the Compliance and Triggered Techniques dashboards.
-
 
 #### Match with Lookup
 Each correlation rule is associated with 1 or more technique IDs.  For a given correlation rule you if you simply want to add the technique ID(s), then you have 2 choices:
