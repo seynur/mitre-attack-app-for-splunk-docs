@@ -1,7 +1,34 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 2.4.1
+latest_version: 3.0.0
+---
+
+### Version 3.0.0
+**Release Date**: 29.11.2020
+
+**What's New?**
+
+| Description   
+| --------------
+| Compatibility with ATT&CK version 8.1
+| ``- Updated lookup tables with technique and sub-technique IDs``
+| ``- Updated lookup table generator search``
+| ``- Updated matrix views to reflect sub-techniques``
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 2.4.1
@@ -29,6 +56,7 @@ latest_version: 2.4.1
 
 
 ---
+
 
 ### Version 2.4.0
 **Release Date**: 30.10.2020

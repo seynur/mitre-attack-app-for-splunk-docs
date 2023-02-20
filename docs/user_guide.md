@@ -5,8 +5,6 @@ title: User Guide
 
 This guide will provide description for the views that comes with this application and steps on how to create additional correlation searches.
 
-
-
 &nbsp;
 
 
@@ -15,12 +13,13 @@ This guide will provide description for the views that comes with this applicati
 
 &nbsp;
 
+
 ### MITRE ATT&CK Compliance with Splunk ES View
 Each cell containing a technique is colored based on the percentage of enabled correlation searches.
 
 If there isn't any related correlation searches, the cell is left uncolored.
 
-If there are available correlation searches either within Enterprise Security (and ESCU) or as regular saved searches with matching MITRE ATT&CK techniques, then cells are colored based on percentage of enabled/active ones.
+If there are available correlation searches within Enterprise Security (and ESCU), then cells are colored based on percentage of enabled/active ones.
 
 Currently the ranges are set as follows:
 
@@ -31,7 +30,6 @@ Currently the ranges are set as follows:
 
 You can mouse over to the cells that contain techniques in order to view the number of available and enabled correlation rules that are specific to that technique.
 ![setup4]
-
 
 &nbsp;
 
@@ -47,7 +45,6 @@ This dashboard/form has filtering options based on "**Event Time Range**" and "*
 You can click on the triggered technique which provides the drill-down functionality.  Depending on your setup you will either drill-down via Enterprise Security App **Incident Review** view or Alert Manager **Incident Posture** for further analysis/investigation.
 
 ![triggered_techniques1]
-
 
 &nbsp;
 
@@ -68,7 +65,6 @@ Currently following panels are available:
 
 ![triggered_techniques2]
 
-
 &nbsp;
 
 
@@ -82,7 +78,6 @@ In order to view a saved/correlation search integrated with the MITRE ATT&amp;CK
 
 1. alert action (ES or Alert Manager) - triggered view TODO:
 2. associate rule with technique TODO:
-
 
 There are 2 ways to accomplish this task.
 
@@ -110,6 +105,10 @@ For example, if we want the *Correlation Search* "**Brute Force Access Behavior 
 
 Once saved, the correlation search will populate both the Compliance and Triggered Techniques dashboards.
 
+&nbsp;
+
+&nbsp;
+
 #### Match with Lookup
 Each correlation rule is associated with 1 or more technique IDs.  For a given correlation rule you if you simply want to add the technique ID(s), then you have 2 choices:
 
@@ -135,13 +134,15 @@ __(1)__ Utilize **Map Rule to Technique** views
 
   __Newly Added User Defined Mapping__: This panel displays the newly selected rule-to-technique mapping which is added to the lookup table.
 
+&nbsp;
+
   * Next, select the rule name form __Rule Name__ dropdown menu item and associate with technique IDs from __MITRE ATT&CK Technique__ multi-select then hit __Submit__.  Both panels will be updated accordingly.
 
   ![map_rule_to_technique2]
 
 __Important NOTE__: If a rule name is already defined, this view does NOT add any mappings to the lookup in order to avoid duplicates.  You will see ``No results found`` message and will need to edit the lookup table manually.
 
-
+&nbsp;
 
 __(2)__ Edit ``mitre_user_rule_technique_lookup.csv`` directly.  
 You can edit the csv directly or utilize Lookup Editor app from web interface.
@@ -154,12 +155,24 @@ The lookup file expects 2 fields:
 * ``rule_name`` : The rule name as it appears in ``savedsearches.conf`` (e.g. "Access - Excessive Failed Logins - Rule")
 * ``technique_id`` : MITRE ATT&CK Technique ID (e.g. T1078 for Valid Accounts) list separated by spaces
 
+&nbsp;
+
+
+---
+
+
+&nbsp;
+
 ### How to integrate with Alert Manager
 __NOTE__:This section is applicable for users who do not have Enterprise Security Application installed and would like to integrate with Alert Manager app.
+
+&nbsp;
+
 
 The Alert Manager application provides simple incident workflows in order to investigate fired alerts or notable events. For any correlation/saved search that is applicable as a MITRE ATT&amp;CK technique you need to select/add Alert Manager as a Splunk alert action.
 
 ![alert_manager_action]
+&nbsp;
 
 __IMPORTANT NOTE__: In order to have drill-down working with Alert Manager seamlessly the ```Title``` must match the search name, therefore leaving it as (shown in the example screenshot) ```$name$``` instead of typing the search title/name is recommended.
 
