@@ -20,7 +20,7 @@ Each cell containing a technique is colored based on the percentage of enabled c
 
 If there isn't any related correlation searches, the cell is left uncolored.
 
-If there are available correlation searches within Enterprise Security (and ESCU), then cells are colored based on percentage of enabled/active ones.
+If there are available correlation searches either within Enterprise Security (and ESCU) or as regular saved searches with matching MITRE ATT&CK techniques, then cells are colored based on percentage of enabled/active ones.
 
 Currently the ranges are set as follows:
 
@@ -82,6 +82,7 @@ In order to view a saved/correlation search integrated with the MITRE ATT&amp;CK
 
 1. alert action (ES or Alert Manager) - triggered view TODO:
 2. associate rule with technique TODO:
+
 
 There are 2 ways to accomplish this task.
 

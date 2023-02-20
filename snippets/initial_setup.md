@@ -1,12 +1,12 @@
-Upon initial installation you will be on Compliance Dashboard.  If the matrix is not populated, click on the table row to run manually, which will direct you to the Setup dashboard (searches run automatically on that dashboard).
+Upon installation of the application you will be redirected to the Setup page.
 
-1.  This setup page will run lookup generating searches for the initial usage. These reports are scheduled to run daily at midnight in order to populate/update the lookup tables for enabled correlation rules pertinent to MITRE ATT&CK Framework.
+1. This setup page provides configuration options for API integration as well as usage with Enterprise Security.  If you do not have an API key or prefer not to have the integration you can simply hit Save button and continue.  If you do not have Enterprise Security, you can use Alert Manager application for triggered results and drill down functionality.  You can always go back to this Setup page and overwrite the settings.  Note that Setup also provides information on scheduled Lookup Generating searches and their schedules.  These can also be edited from Settings.
 
     ![setup0]
 2. After the initial setup you will be on Compliance Dashboard.  If the matrix is not populated, click on the table row to run manually, which will direct you to the Lookup File Generation dashboard (searches run automatically on that dashboard).  Click on the table row.
 
      ![setup1]
- 3. This dashboard will run lookup generating searches for the initial usage. These reports are scheduled to run daily at midnight in order to populate/update the lookup tables for enabled correlation rules pertinent to MITRE ATT&CK Framework.
+3. This dashboard will run lookup generating searches for the initial usage. These reports are scheduled to run daily at midnight in order to populate/update the lookup tables for enabled correlation rules pertinent to MITRE ATT&CK Framework.
 
     ![setup2]
 4. Wait for the initial search to complete for MITRE ATT&CK All Rules and Techniques Lookup.  Depending on your environment you may get an error for MITRE ATT&CK Compliance Lookup.  No worries, wait for 15 seconds for it to refresh; this search depends on the first one.
