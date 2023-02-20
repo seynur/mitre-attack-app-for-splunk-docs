@@ -14,7 +14,7 @@ This guide will provide description for the views that comes with this applicati
 &nbsp;
 
 
-### MITRE ATT&CK Compliance with Splunk ES View
+### MITRE ATT&CK Compliance View
 Each cell containing a technique/sub-technique is colored based on the percentage of enabled correlation searches.
 
 If there isn't any related correlation searches, the cell is left uncolored.
