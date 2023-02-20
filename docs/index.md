@@ -6,20 +6,24 @@ title: Overview
 
 ---
 
+
 ### Required Splunk Apps:
 --8<-- "required_splunk_apps.md"
 
 ---
 
-### Setup Instructions:
+
+### Setup Instructions
 --8<-- "setup_instructions.md"
 
 ---
+
 
 ### Saved Searches
 --8<-- "savedsearches.md"
 
 ---
+
 
 ### Quick Links
 

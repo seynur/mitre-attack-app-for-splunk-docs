@@ -1,17 +1,20 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 1.2.1
+latest_version: 1.3.0
 ---
-### Version 1.2.1
-**Release Date**: 24.10.2019
+
+### Version 1.3.0
+**Release Date**: 09.01.2020
 
 **What's New?**
 
 | Description |
 | ------------------------
-| Bug fixes with javascript table population
-| Ordering of table fields to align with MITRE ATT&CK content
+|  Updated ATT&CK Matrix dashboard
+| Added new dashboard for detailed view of triggered rules by notable assets and tactics/techniques
+| Improved search performance and dependency on lookups
+| Added a new lookup to match correlation rules to MITRE ATT&CK tactics/techniques
 
 **Known Issues**
 
