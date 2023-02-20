@@ -1,7 +1,32 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.2.0
+latest_version: 3.3.0
+---
+
+### Version 3.3.0
+**Release Date**: 26.05.2021
+
+**What's New?**
+
+| Description   
+| --------------
+| Updated jQuery to version 3.6.0
+| Added new Rule Display Option to the MITRE ATT&CK Compliance dashboard to show all existing rules or only enabled rules
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 3.2.0

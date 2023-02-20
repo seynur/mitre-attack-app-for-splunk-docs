@@ -104,7 +104,7 @@ For example, if we want the *Correlation Search* "**Brute Force Access Behavior 
    ![analyticstory4]
 4. Click **Save** to save the *Analytic Story* with annotation and mapping with the defined correlation search.  You can add many correlation searches under one analytic story with defined mappings.
 
-Once saved, the correlation search will populate both the Compliance and Triggered Techniques dashboards.
+Once you’re done with the **Analytic Story**, you may want to run Lookup File Generation manually in order to generate the overall lookup files or wait until the scheduled searches run. After lookup file generation, the correlation search will populate both the Compliance and Triggered Techniques dashboards.
 
 
 &nbsp;
