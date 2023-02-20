@@ -1,7 +1,31 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.6.0
+latest_version: 3.7.0
+---
+
+### Version 3.7.0
+**Release Date**: 02.11.2022
+
+**What's New?**
+
+| Description   
+| --------------
+| Compatibility with ATT&CK version 12
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| N/A    | N/A	          | -
+
 ---
 
 ### Version 3.6.0
