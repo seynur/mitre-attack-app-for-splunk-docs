@@ -5,6 +5,7 @@ title: User Guide
 
 This guide will provide description for the views that comes with this application and steps on how to create additional correlation searches.
 
+
 &nbsp;
 
 
@@ -104,6 +105,7 @@ For example, if we want the *Correlation Search* "**Brute Force Access Behavior 
 4. Click **Save** to save the *Analytic Story* with annotation and mapping with the defined correlation search.  You can add many correlation searches under one analytic story with defined mappings.
 
 Once saved, the correlation search will populate both the Compliance and Triggered Techniques dashboards.
+
 
 &nbsp;
 

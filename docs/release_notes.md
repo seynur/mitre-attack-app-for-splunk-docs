@@ -1,7 +1,31 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.0.1
+latest_version: 3.0.2
+---
+
+### Version 3.0.2
+**Release Date**: 20.03.2021
+
+**What's New?**
+
+| Description   
+| --------------
+| Bug fixes
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| N/A    | N/A	          | Drill-down functionality on MITRE ATT&CK Matrix is passing wrong argument
+
 ---
 
 ### Version 3.0.1
