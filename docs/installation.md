@@ -7,7 +7,7 @@ title: Installation
 2. Install the application on Splunk Enterprise.  DA-ESS-MitreContent should be installed on the _Search Head_ or _Search Head Cluster_ where Enterprise Security Application resides.
   For details on add-on installation please refer to [Splunk Documentation](https://docs.splunk.com/Documentation/AddOns/released/Overview/Installingadd-ons)
 
-3. Please be sure that Enterprise Security or Alert Manager applications are properly installed, configured, and ready to use.
+3. Please be sure that Enterprise Security application is properly installed, configured, and ready to use.
 
   &nbsp;
 
@@ -16,7 +16,5 @@ title: Installation
 
 
   &nbsp;
-
-### Initial Setup
 
 --8<-- "initial_setup.md"

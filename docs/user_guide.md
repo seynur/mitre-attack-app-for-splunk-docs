@@ -40,9 +40,9 @@ You can mouse over to the cells that contain techniques/sub-techniques in order 
 &nbsp;
 
 ### MITRE ATT&CK Matrix View
-This dashboard/form has filtering options based on "**Event Time Range**" and "**Urgency**" level and it provides and overview of triggered techniques within MITRE ATT&CK Matrix colored according to the "**Urgency**" level of Notable Events or Alert Manager populated index.
+This dashboard/form has filtering options based on "**Event Time Range**" and "**Urgency**" level and it provides and overview of triggered techniques within MITRE ATT&CK Matrix colored according to the "**Urgency**" level of Notable Events populated index.
 
-You can click on the triggered technique which provides the drill-down functionality.  Depending on your setup you will either drill-down via Enterprise Security App **Incident Review** view or Alert Manager **Incident Posture** for further analysis/investigation.
+You can click on the triggered technique which provides the drill-down functionality.  Depending on your setup you will either drill-down via Enterprise Security App **Incident Review** view for further analysis/investigation.
 
 ![triggered_techniques1]
 
@@ -76,7 +76,7 @@ Currently following panels are available:
 ### How To Match a Correlation Search with Framework
 In order to view a saved/correlation search integrated with the MITRE ATT&amp;CK Matrix, following tasks need to be completed.
 
-1. alert action (ES or Alert Manager) - triggered view TODO:
+1. alert action (ES) - triggered view TODO:
 2. associate rule with technique TODO:
 
 There are 4 ways to accomplish this task.
@@ -202,32 +202,6 @@ It's possible to dynamically match your triggered events (notable or alert) by s
    | tstats ...
    | eval annotations.mitre_attack.mitre_technique_id="T1189"
    ```
-For users utilizing Alert Manager, you will need to update `all_alerts` macro definition that comes with the app in order to include `annotations.mitre_attack.mitre_technique_id` field in the results by adding it to `| fields ...` definition.
-
-For example, you can update Alert Manager `macros.conf` as following to support dynamic technique lookups:
-
-![alertmanager_macro]
-
-&nbsp;
-
-
----
-
-
-&nbsp;
-
-### How to integrate with Alert Manager
-__NOTE__:This section is applicable for users who do not have Enterprise Security Application installed and would like to integrate with Alert Manager app.
-
-&nbsp;
-
-
-The Alert Manager application provides simple incident workflows in order to investigate fired alerts or notable events. For any correlation/saved search that is applicable as a MITRE ATT&amp;CK technique you need to select/add Alert Manager as a Splunk alert action.
-
-![alert_manager_action]
-&nbsp;
-
-__IMPORTANT NOTE__: In order to have drill-down working with Alert Manager seamlessly the ```Title``` must match the search name, therefore leaving it as (shown in the example screenshot) ```$name$``` instead of typing the search title/name is recommended.
 
 ----
 
@@ -243,10 +217,8 @@ __IMPORTANT NOTE__: In order to have drill-down working with Alert Manager seaml
 [map_rule_to_technique1]: assets/img/map_rule_to_technique1.png
 [map_rule_to_technique2]: assets/img/map_rule_to_technique2.png
 [map_rule_to_technique3]: assets/img/map_rule_to_technique3.png
-[alert_manager_action]: assets/img/alert_manager_action.png
 [contentmanagement1]: assets/img/contentmanagement1.png
 [contentmanagement2]: assets/img/contentmanagement2.png
 [contentmanagement3]: assets/img/contentmanagement3.png
 [contentmanagement4]: assets/img/contentmanagement4.png
 [contentmanagement5]: assets/img/contentmanagement5.png
-[alertmanager_macro]: assets/img/alertmanager_macro.png
