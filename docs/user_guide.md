@@ -29,7 +29,7 @@ Currently the ranges are set as follows:
 * high: 70%+ enabled
 
 You can mouse over to the cells that contain techniques/sub-techniques in order to view the number of available and enabled correlation rules that are specific to that technique/sub-technique.
-![setup4]
+![setup5]
 
 &nbsp;
 
@@ -64,6 +64,10 @@ Currently following panels are available:
 3. **Triggered Techniques by Tactic**: There's a separate panel for each MITRE ATT&CK Framework Tactic that shows details on triggered Technique, associated correlation rule name, and count of occurrences.
 
 ![triggered_techniques2]
+
+![triggered_techniques3]
+
+![triggered_techniques4]
 
 &nbsp;
 
@@ -100,9 +104,19 @@ For example, if we want the *Correlation Search* "**Brute Force Access Behavior 
 
    ![analyticstory2]
    ![analyticstory3]
-3. Enter ``detection`` for **Type** field and under **Annotations** enter ``mitre_attack`` for **Name** and ``Brute Force`` for **Mappings** (this should match the technique)
+3. Enter ``detection`` for **Type** field and under **Annotations**.
 
    ![analyticstory4]
+
+ Click ``Framework`` and enter ``mitre_attack`` for **Framework Name**.
+
+   ![analyticstory5]
+
+   ![analyticstory6]
+
+Enter ``Brute Force`` for **Mappings** (this should match the technique).
+
+   ![analyticstory7]
 4. Click **Save** to save the *Analytic Story* with annotation and mapping with the defined correlation search.  You can add many correlation searches under one analytic story with defined mappings.
 
 Once you’re done with the **Analytic Story**, you may want to run Lookup File Generation manually in order to generate the overall lookup files or wait until the scheduled searches run. After lookup file generation, the correlation search will populate both the Compliance and Triggered Techniques dashboards.
@@ -176,6 +190,14 @@ __(1)__ Utilize **Map Rule to Technique** views
 
   ![map_rule_to_technique2]
 
+  **Note:** Splunk is equipped with security safeguards in its SPL to alert users when attempting to execute a search in Splunk Web that includes commands deemed potentially risky. If a [search command](https://docs.splunk.com/Documentation/Splunk/9.1.1/Security/SPLsafeguards#Commands_that_trigger_SPL_safeguards) falls into this category and triggers the safeguard, a warning dialog box will pop up (Splunk version 9.0 and above), offering additional information for review. Users are given the choice to acknowledge the potential risks and proceed with running the query.
+
+  ![map_rule_to_technique3]
+
+  ![map_rule_to_technique4]
+
+   ![map_rule_to_technique5]
+
 __Important NOTE__: If a rule name is already defined, this view does NOT add any mappings to the lookup in order to avoid duplicates.  You will see ``No results found`` message and will need to edit the lookup table manually.
 
 &nbsp;
@@ -206,17 +228,24 @@ It's possible to dynamically match your triggered events (notable or alert) by s
 ----
 
 
-[setup4]: assets/img/setup4.png
+[setup5]: assets/img/setup5.png
 [triggered_techniques1]: assets/img/triggered_techniques1.png
 [triggered_techniques2]: assets/img/triggered_techniques2.png
+[triggered_techniques3]: assets/img/triggered_techniques3.png
+[triggered_techniques4]: assets/img/triggered_techniques4.png
 [analyticstory1]: assets/img/analyticstory1.png
 [analyticstory2]: assets/img/analyticstory2.png
 [analyticstory3]: assets/img/analyticstory3.png
 [analyticstory4]: assets/img/analyticstory4.png
+[analyticstory5]: assets/img/analyticstory5.png
+[analyticstory6]: assets/img/analyticstory6.png
+[analyticstory7]: assets/img/analyticstory7.png
 [lookup_editor1]: assets/img/lookup_editor1.png
 [map_rule_to_technique1]: assets/img/map_rule_to_technique1.png
 [map_rule_to_technique2]: assets/img/map_rule_to_technique2.png
 [map_rule_to_technique3]: assets/img/map_rule_to_technique3.png
+[map_rule_to_technique4]: assets/img/map_rule_to_technique4.png
+[map_rule_to_technique5]: assets/img/map_rule_to_technique5.png
 [contentmanagement1]: assets/img/contentmanagement1.png
 [contentmanagement2]: assets/img/contentmanagement2.png
 [contentmanagement3]: assets/img/contentmanagement3.png
