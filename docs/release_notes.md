@@ -4,14 +4,15 @@ layout: documentation
 latest_version: 3.9.0
 ---
 
-### Version 3.9.0
-**Release Date**: 12.05.2023
+### Version 3.10.0
+**Release Date**: 27.11.2023
 
 **What's New?**
 
 | Description   
 | --------------
-| Updated search macros and views to include MITRE ATT&CK annotations dynamically.
+| Compatibility with ATT&CK version 14.0
+
 
 **Known Issues**
 
@@ -24,7 +25,33 @@ latest_version: 3.9.0
 
 | Date Fixed    | Issue Number      | Description |
 | ------------- | ----------------  | ----------------------  
-| N/A    | N/A	          | Extra characters are removed from several saved searches.
+| 01.04.2023    | MAAFS-77	        | Updated default rules lookup with the latest version of ES and ESCU.
+
+---
+
+### Version 3.9.0
+**Release Date**: 12.05.2023
+
+**What's New?**
+
+| Description   
+| --------------
+| Compatibility with ATT&CK version 13.0
+| Ability to filter ATT&CK Matrix view by Group information
+
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Fixed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------  
+| 01.04.2023    | MAAFS-77	        | Updated default rules lookup with the latest version of ES and ESCU.
 
 ---
 
@@ -35,7 +62,7 @@ latest_version: 3.9.0
 
 | Description   
 | --------------
-| Updated search macros and views to include MITRE ATT&CK annotations dynamically.
+| Bug fix.
 
 **Known Issues**
 
@@ -48,7 +75,7 @@ latest_version: 3.9.0
 
 | Date Fixed    | Issue Number      | Description |
 | ------------- | ----------------  | ----------------------  
-| N/A    | N/A	          | Extra characters are removed from several saved searches.
+| 30.01.2023    | MAAFS-65	        | Extra characters are removed from several saved searches.
 
 ---
 
