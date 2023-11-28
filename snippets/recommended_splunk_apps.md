@@ -1,1 +1,3 @@
-* [Lookup File Editor](https://splunkbase.splunk.com/app/1724/)
+- [Splunk ES Content Update](https://splunkbase.splunk.com/app/3449/)
+- [Splunk Common Information Model (CIM)](https://splunkbase.splunk.com/app/1621/)
+- [Lookup File Editor](https://splunkbase.splunk.com/app/1724/)
