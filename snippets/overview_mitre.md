@@ -1,0 +1,1 @@
+This application provides compliance and triage dashboards for MITRE ATT&CK Framework with drill-down capabilities. It is recommended to utilize [Splunk Enterprise Security](https://splunkbase.splunk.com/app/263/) and [Splunk ES Content Update](https://splunkbase.splunk.com/app/3449/).

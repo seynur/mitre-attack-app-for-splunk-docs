@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand sticky-top bg-padas-dark p-0 navbar-padas">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-0" href="/">
+      <div class="padas_logo">
+        <img class="padas_header_logo normal-image" src="/assets/img/padas_logo_light_color.png">
+        <img class="padas_header_logo hover-image" src="/assets/img/padas_logo_color.png">
+      </div>
+    </a>
+    <a class="nav-link" href="/docs/index.html">
+      <span class="ps-3">Overview</span>
+    </a>
+    {% for item in site.data.navigation_docs.items %}
+    <a class="py-2 d-none d-md-inline-block" href="{{ item.link }} ">{{ item.name }}</a>
+    {% endfor %}
+  </div>
+</nav>
