@@ -45,15 +45,13 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin
       link: https://tr.linkedin.com/company/seynur?original_referer=https%3A%2F%2Fwww.google.com%2F
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/seynur
   generator: false
-  current_version: 3.11.0
+  current_version: 3.12.0
   version:
     provider: mike
 
 
-copyright: Copyright &copy; 2024 - Seynur All rights reserved.
+copyright: Copyright &copy; 2025 - Seynur All rights reserved.
 
 watch:
   - "snippets"
