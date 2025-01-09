@@ -1,7 +1,25 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.9.0
+latest_version: 3.11.0
+---
+
+### Version 3.11.0
+**Release Date**: 06.05.2024
+
+**What's New?**
+
+| Description   
+| --------------
+| Compatibility with ATT&CK version 15.0
+
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
 ---
 
 ### Version 3.10.0
