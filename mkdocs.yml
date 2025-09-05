@@ -46,7 +46,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://tr.linkedin.com/company/seynur?original_referer=https%3A%2F%2Fwww.google.com%2F
   generator: false
-  current_version: 3.12.0
+  current_version: 3.13.0
   version:
     provider: mike
 
