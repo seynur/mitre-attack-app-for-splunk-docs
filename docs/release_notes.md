@@ -18,7 +18,7 @@ latest_version: 3.13.0
 
 | Date Filed    | Issue Number      | Description |
 | ------------- | ----------------  | ----------------------       
-| N/A    | N/A          | -
+| 05.09.2025   | MAAFS-91          | “MITRE ATT&CK Compliance Lookup Gen Status” Generator Error on the Splunk Cloud
 
 
 ---
