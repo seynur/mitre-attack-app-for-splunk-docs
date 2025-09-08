@@ -13,8 +13,14 @@ latest_version: 3.13.0
 | --------------
 | Compatibility with ATT&CK version 17.1
 
-
 **Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
 
 | Date Filed    | Issue Number      | Description |
 | ------------- | ----------------  | ----------------------       
