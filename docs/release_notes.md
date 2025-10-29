@@ -1,7 +1,25 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.13.0
+latest_version: 3.14.0
+---
+
+### Version 3.14.0
+**Release Date**: 30.10.2025
+
+**What's New?**
+
+| Description   
+| --------------
+| Redesigned the dashboard layout for improved usability and modern visuals.
+| Introduced a new threat actor–based lookup and corresponding dashboard to correlate adversaries with MITRE ATT&CK techniques for improved detection and coverage analysis.
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
 ---
 
 ### Version 3.13.0
