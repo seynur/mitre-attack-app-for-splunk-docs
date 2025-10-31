@@ -5,7 +5,7 @@ latest_version: 3.14.0
 ---
 
 ### Version 3.14.0
-**Release Date**: 30.10.2025
+**Release Date**: 31.10.2025
 
 **What's New?**
 
