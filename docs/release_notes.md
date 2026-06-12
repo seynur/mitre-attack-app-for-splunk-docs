@@ -1,7 +1,88 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.11.0
+latest_version: 3.15.0
+---
+
+### Version 3.15.0
+**Release Date**: 02.06.2026
+
+**What's New?**
+
+| Description   
+| --------------
+| Feature: Added MITRE ATLAS support — ATLAS annotation (mitre_atlas) is now registered as a security framework in Splunk Enterprise Security via the setup page, enabling ATLAS-based correlation rule mapping.
+| Feature: Introduced ATLAS compliance and matrix dashboards alongside existing MITRE ATT&CK dashboards.
+| Feature: Added ATLAS Rule Finder dashboard to search correlation rules by ATLAS technique.
+| Bug fix: Fixed urgency filter in ATT&CK Matrix dashboard — urgency selection was defined in the fieldset but not applied to the underlying search, causing the filter to have no effect on triggered technique counts.
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+---
+
+### Version 3.14.0
+**Release Date**: 31.10.2025
+
+**What's New?**
+
+| Description   
+| --------------
+| Redesigned the dashboard layout for improved usability and modern visuals.
+| Introduced a new threat actor–based lookup and corresponding dashboard to correlate adversaries with MITRE ATT&CK techniques for improved detection and coverage analysis.
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+---
+
+### Version 3.13.0
+**Release Date**: 26.05.2025
+
+**What's New?**
+
+| Description   
+| --------------
+| Compatibility with ATT&CK version 17.1
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+
+**Fixed Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| 05.09.2025   | MAAFS-91          | “MITRE ATT&CK Compliance Lookup Gen Status” Generator Error on the Splunk Cloud
+
+
+---
+
+### Version 3.12.0
+**Release Date**: 09.01.2025
+
+**What's New?**
+
+| Description   
+| --------------
+| Compatibility with ATT&CK version 16.1
+
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
 ---
 
 ### Version 3.11.0
