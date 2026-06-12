@@ -477,7 +477,10 @@
 <p>This application comes with predefined saved searches.  Lookup Gen searches are scheduled to run  daily after midnight.</p>
 <ul>
 <li><strong>MITRE ATT&amp;CK All Rules and Techniques Lookup Gen</strong>: This lookup generator checks currently enabled correlation rules via analytic stories and combines the searches with user-defined <code>mitre_user_rule_technique_lookup.csv</code> file that matches MITRE ATT&amp;CK technique/sub-technique IDs with rules.</li>
-<li><strong>MITRE ATT&amp;CK Compliance Lookup Gen</strong>: This lookup generator relies on <code>mitre_all_rule_technique_lookup.csv</code> in order to generate a new lookup to properly display MITRE ATT&amp;CK Compliance martix.</li>
+<li><strong>MITRE ATT&amp;CK Compliance Lookup Gen</strong>: This lookup generator relies on <code>mitre_all_rule_technique_lookup.csv</code> in order to generate a new lookup to properly display MITRE ATT&amp;CK Compliance matrix.</li>
+<li><strong>MITRE ATT&amp;CK User Rules Compliance Lookup Gen</strong>: This lookup generator relies on <code>mitre_all_rule_technique_lookup.csv</code> and calculates compliance metrics only for user-defined correlation rules by aggregating enabled/disabled rule coverage per MITRE ATT&amp;CK technique.</li>
+<li><strong>MITRE ATLAS All Rules and Techniques Lookup Gen</strong>: This lookup generator checks correlation rules via analytic stories and saved searches and maps MITRE ATLAS technique/sub-technique annotations using atlas_tt_lookup and user-defined <code>atlas_user_rule_technique_lookup.csv</code> file to build full ATLAS rule coverage.</li>
+<li><strong>MITRE ATLAS User Rules Compliance Lookup Gen</strong>: This lookup generator relies on <code>atlas_all_rule_technique_lookup.csv</code> and calculates compliance metrics only for user-defined correlation rules by aggregating enabled/disabled rule coverage per MITRE ATLAS technique.</li>
 </ul>
 <hr />
 <p>&nbsp;</p>
