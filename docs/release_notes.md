@@ -1,7 +1,7 @@
 ---
 title: Release Notes
 layout: documentation
-latest_version: 3.14.0
+latest_version: 3.15.0
 ---
 
 ### Version 3.15.0
