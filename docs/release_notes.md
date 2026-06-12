@@ -4,6 +4,26 @@ layout: documentation
 latest_version: 3.14.0
 ---
 
+### Version 3.15.0
+**Release Date**: 02.06.2026
+
+**What's New?**
+
+| Description   
+| --------------
+| Feature: Added MITRE ATLAS support — ATLAS annotation (mitre_atlas) is now registered as a security framework in Splunk Enterprise Security via the setup page, enabling ATLAS-based correlation rule mapping.
+| Feature: Introduced ATLAS compliance and matrix dashboards alongside existing MITRE ATT&CK dashboards.
+| Feature: Added ATLAS Rule Finder dashboard to search correlation rules by ATLAS technique.
+| Bug fix: Fixed urgency filter in ATT&CK Matrix dashboard — urgency selection was defined in the fieldset but not applied to the underlying search, causing the filter to have no effect on triggered technique counts.
+
+**Known Issues**
+
+| Date Filed    | Issue Number      | Description |
+| ------------- | ----------------  | ----------------------       
+| N/A    | N/A          | -
+
+---
+
 ### Version 3.14.0
 **Release Date**: 31.10.2025
 
